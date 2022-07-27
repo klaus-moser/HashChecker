@@ -32,25 +32,18 @@ class Colors:  # define terminal colors
 class HashCheck(Colors):
 
     def __init__(self, hash1, hash2):
+        self.check_length(hash1=hash1, hash2=hash2)
         self.hash1 = hash1.lower()
         self.hash2 = hash2.lower()
-        self.max_len = len(max(hash1, hash2))
-        self.adapt_hashes()
+        self.max_len = max(len(hash1), len(hash2))
 
-    def adapt_hashes(self) -> None:
+    @staticmethod
+    def check_length(hash1, hash2) -> None:
         """
-        Check the length of both hashes and adapt them if necessary.
+        Check length of both hashes.
         """
-        hash_small = min(self.hash1, self.hash2)
-        hash_big = max(self.hash1, self.hash2)
-
-        while len(hash_small) != len(hash_big):
-            hash_small += ' '
-
-        if hash_big == self.hash1:
-            self.hash2 = hash_small
-        else:
-            self.hash1 = hash_small
+        if len(hash1) != len(hash2):
+            exit("Hashes differ in length!")
 
     def get_diff(self) -> list:
         """
