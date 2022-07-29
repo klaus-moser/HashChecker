@@ -38,12 +38,24 @@
    <enum>QTabWidget::Rounded</enum>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>400</width>
+     <height>300</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>400</width>
+     <height>300</height>
+    </size>
+   </property>
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
       <x>-1</x>
       <y>-1</y>
-      <width>402</width>
+      <width>405</width>
       <height>301</height>
      </rect>
     </property>
@@ -91,7 +103,7 @@
         <number>5</number>
        </property>
        <property name="rightMargin">
-        <number>5</number>
+        <number>7</number>
        </property>
        <property name="bottomMargin">
         <number>5</number>
@@ -114,6 +126,24 @@
        </item>
        <item row="0" column="2">
         <widget class="QPushButton" name="push_button_h1">
+         <property name="minimumSize">
+          <size>
+           <width>56</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>56</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="baseSize">
+          <size>
+           <width>56</width>
+           <height>17</height>
+          </size>
+         </property>
          <property name="font">
           <font>
            <family>Terminal</family>
@@ -124,6 +154,9 @@
          </property>
          <property name="text">
           <string>Browse</string>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
          </property>
         </widget>
        </item>
@@ -142,6 +175,24 @@
        </item>
        <item row="1" column="2">
         <widget class="QPushButton" name="push_button_h2">
+         <property name="minimumSize">
+          <size>
+           <width>56</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>56</width>
+           <height>17</height>
+          </size>
+         </property>
+         <property name="baseSize">
+          <size>
+           <width>56</width>
+           <height>17</height>
+          </size>
+         </property>
          <property name="font">
           <font>
            <family>Terminal</family>
@@ -215,16 +266,22 @@
        </property>
        <item>
         <widget class="QPlainTextEdit" name="plain_text_edit">
+         <property name="minimumSize">
+          <size>
+           <width>332</width>
+           <height>80</height>
+          </size>
+         </property>
          <property name="maximumSize">
           <size>
            <width>300</width>
-           <height>100</height>
+           <height>80</height>
           </size>
          </property>
          <property name="baseSize">
           <size>
            <width>300</width>
-           <height>100</height>
+           <height>80</height>
           </size>
          </property>
          <property name="font">
@@ -238,20 +295,20 @@
         <widget class="QPushButton" name="push_button_go">
          <property name="minimumSize">
           <size>
-           <width>100</width>
-           <height>100</height>
+           <width>56</width>
+           <height>56</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
-           <width>100</width>
-           <height>100</height>
+           <width>56</width>
+           <height>56</height>
           </size>
          </property>
          <property name="baseSize">
           <size>
-           <width>100</width>
-           <height>100</height>
+           <width>60</width>
+           <height>60</height>
           </size>
          </property>
          <property name="font">
