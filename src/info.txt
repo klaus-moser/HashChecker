@@ -1,0 +1,4 @@
+# qt
+# To create *.py from *.ui run:
+
+# pyuic5 -o <output-file.py> <gui-file.ui>
