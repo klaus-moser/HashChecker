@@ -1,4 +1,11 @@
 # qt
+# --------------------------------------------
+# \path\to\env\Scripts\activate
+# pip install pyqt5
+# pip install pyqt5-tools
+
+# --------------------------------------------
+# \path\to\env\Scripts\activate
 # To create *.py from *.ui run:
 
 # pyuic5 -o <output-file.py> <gui-file.ui>
