@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QDialog, QMainWindow, QMessageBox
+from PyQt5.QtWidgets import QMainWindow, QMessageBox
 
 from view_orig import Ui_MainWindow
 

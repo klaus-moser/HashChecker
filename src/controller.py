@@ -28,9 +28,7 @@ class Controller(object):
 
     def connect_signals_slots(self) -> None:
         pass
-        self.view.push_button_go.clicked.connect(self.view.about)
-        self.view.push_button_h1.clicked.connect(self.view.about)
-        self.view.push_button_h2.clicked.connect(self.view.about)
+        self.view.pushButton_about.clicked.connect(self.view.about)
 
 
 if __name__ == "__main__":
