@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'view.ui'
+# Form implementation generated from reading ui file 'src\view.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.7
 #
@@ -23,6 +23,8 @@ class Ui_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setMinimumSize(QtCore.QSize(400, 300))
         self.centralwidget.setMaximumSize(QtCore.QSize(400, 300))
+        self.centralwidget.setSizeIncrement(QtCore.QSize(400, 300))
+        self.centralwidget.setBaseSize(QtCore.QSize(400, 300))
         self.centralwidget.setObjectName("centralwidget")
         self.verticalLayoutWidget = QtWidgets.QWidget(self.centralwidget)
         self.verticalLayoutWidget.setGeometry(QtCore.QRect(-1, -1, 405, 301))

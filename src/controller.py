@@ -10,6 +10,7 @@
 """ HashChecker - Controller. """
 
 import sys
+import os
 from PyQt5.QtWidgets import QApplication
 from view import Window
 from model import Model
@@ -26,12 +27,14 @@ class Controller(object):
         self.connect_signals_slots()
 
     def connect_signals_slots(self) -> None:
+        pass
         self.view.push_button_go.clicked.connect(self.view.about)
         self.view.push_button_h1.clicked.connect(self.view.about)
         self.view.push_button_h2.clicked.connect(self.view.about)
 
 
 if __name__ == "__main__":
+    os.environ["QT_AUTO_SCREEN_SCALE_FACTOR"] = "1"
     app = QApplication(sys.argv)  # Create an instance of 'QApplication'
     win = Window()
     win.show()  # Show the calculator's GUI
