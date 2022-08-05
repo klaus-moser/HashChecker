@@ -1,5 +1,4 @@
 from PyQt5.QtWidgets import QDialog, QMainWindow, QMessageBox
-from PyQt5.uic import loadUi
 
 from view_orig import Ui_MainWindow
 
