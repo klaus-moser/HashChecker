@@ -28,6 +28,11 @@
     <height>300</height>
    </size>
   </property>
+  <property name="font">
+   <font>
+    <family>Terminal</family>
+   </font>
+  </property>
   <property name="windowTitle">
    <string>Hash - Checker</string>
   </property>
