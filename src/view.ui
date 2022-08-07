@@ -78,11 +78,14 @@
       <x>9</x>
       <y>9</y>
       <width>381</width>
-      <height>281</height>
+      <height>291</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
      <property name="spacing">
+      <number>4</number>
+     </property>
+     <property name="bottomMargin">
       <number>4</number>
      </property>
      <item>
@@ -90,7 +93,7 @@
        <property name="minimumSize">
         <size>
          <width>0</width>
-         <height>100</height>
+         <height>70</height>
         </size>
        </property>
       </widget>
@@ -112,6 +115,12 @@
        </item>
        <item row="1" column="2">
         <widget class="QPushButton" name="pushButton_h1">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>19</height>
+          </size>
+         </property>
          <property name="text">
           <string>Browse</string>
          </property>
@@ -129,6 +138,12 @@
        </item>
        <item row="2" column="2">
         <widget class="QPushButton" name="pushButton_h2">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>19</height>
+          </size>
+         </property>
          <property name="text">
           <string>Browse</string>
          </property>
@@ -137,62 +152,105 @@
       </layout>
      </item>
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_output">
-       <property name="spacing">
-        <number>4</number>
-       </property>
+      <layout class="QVBoxLayout" name="verticalLayout_output">
        <item>
-        <widget class="QPlainTextEdit" name="plainTextEdit_output">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>90</height>
-          </size>
+        <layout class="QGridLayout" name="gridLayout">
+         <property name="spacing">
+          <number>0</number>
          </property>
-         <property name="maximumSize">
-          <size>
-           <width>300</width>
-           <height>119</height>
-          </size>
-         </property>
-         <property name="frameShadow">
-          <enum>QFrame::Sunken</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <layout class="QVBoxLayout" name="verticalLayout_go_about">
-         <item>
-          <widget class="QPushButton" name="pushButton_go">
+         <item row="0" column="0">
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>42</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="1" column="3">
+          <widget class="QPushButton" name="pushButton_3">
            <property name="minimumSize">
             <size>
              <width>0</width>
-             <height>75</height>
+             <height>19</height>
             </size>
            </property>
-           <property name="font">
-            <font>
-             <pointsize>35</pointsize>
-            </font>
+           <property name="maximumSize">
+            <size>
+             <width>56</width>
+             <height>16777215</height>
+            </size>
            </property>
            <property name="text">
-            <string>GO!</string>
+            <string>About</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QRadioButton" name="radioButton_4">
+           <property name="text">
+            <string>SHA-256</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QRadioButton" name="radioButton_2">
+           <property name="text">
+            <string>MD5</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QRadioButton" name="radioButton_7">
+           <property name="text">
+            <string>SHA-512</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QRadioButton" name="radioButton_5">
+           <property name="text">
+            <string>SHA-1</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QTextEdit" name="textEdit">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>95</height>
+            </size>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton_about">
-           <property name="maximumSize">
+          <widget class="QPushButton" name="pushButton">
+           <property name="minimumSize">
             <size>
-             <width>71</width>
-             <height>16777215</height>
+             <width>0</width>
+             <height>95</height>
             </size>
            </property>
-           <property name="layoutDirection">
-            <enum>Qt::LeftToRight</enum>
+           <property name="maximumSize">
+            <size>
+             <width>56</width>
+             <height>95</height>
+            </size>
            </property>
            <property name="text">
-            <string>About</string>
+            <string>GO!</string>
            </property>
           </widget>
          </item>
