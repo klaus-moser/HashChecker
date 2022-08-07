@@ -175,7 +175,7 @@
           </spacer>
          </item>
          <item row="1" column="3">
-          <widget class="QPushButton" name="pushButton_3">
+          <widget class="QPushButton" name="pushButton_about">
            <property name="minimumSize">
             <size>
              <width>0</width>
@@ -194,28 +194,28 @@
           </widget>
          </item>
          <item row="0" column="2">
-          <widget class="QRadioButton" name="radioButton_4">
+          <widget class="QRadioButton" name="radioButton_sha256">
            <property name="text">
             <string>SHA-256</string>
            </property>
           </widget>
          </item>
          <item row="0" column="1">
-          <widget class="QRadioButton" name="radioButton_2">
+          <widget class="QRadioButton" name="radioButton_md5">
            <property name="text">
             <string>MD5</string>
            </property>
           </widget>
          </item>
          <item row="1" column="2">
-          <widget class="QRadioButton" name="radioButton_7">
+          <widget class="QRadioButton" name="radioButton_sha512">
            <property name="text">
             <string>SHA-512</string>
            </property>
           </widget>
          </item>
          <item row="1" column="1">
-          <widget class="QRadioButton" name="radioButton_5">
+          <widget class="QRadioButton" name="radioButton_sha1">
            <property name="text">
             <string>SHA-1</string>
            </property>
@@ -226,7 +226,7 @@
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout">
          <item>
-          <widget class="QTextEdit" name="textEdit">
+          <widget class="QTextEdit" name="textEdit_output">
            <property name="maximumSize">
             <size>
              <width>16777215</width>
@@ -236,7 +236,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton">
+          <widget class="QPushButton" name="pushButton_go">
            <property name="minimumSize">
             <size>
              <width>0</width>
